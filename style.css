@@ -8,7 +8,7 @@
     --main-color: #00b894;
     --white-text: white;
     --black-text: #2d3436;
-    --color-grey: #F4F7FF;
+    --color-grey: #E2E8F0;
 
 }
 
@@ -91,3 +91,99 @@
 .main-content{
     background-color: var(--color-grey);
 }
+
+/* header */
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    padding: 0 40px;
+}
+
+.hdr-user-info {
+    grid-column: 1;
+    grid-rows: 1;
+
+    display: grid;
+    grid-template-columns: 10% 90% ;
+}
+
+#userAT {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.hdr-user-info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.hdr-search {
+    display: grid;
+    align-items: center;
+
+}
+
+.hdr-search form input{
+    background-color: #E2E8F0;
+    border-radius: 20px;
+    width: 650px;
+    height: 25px;
+    border: none;
+    margin-left: 15px;
+}
+
+.hdr-user-profile-pfpic {
+    background-image: url(img/avatar.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+
+.hdr-user-profile {
+    grid-row: 1;
+    grid-column: 2;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.hdr-user-profile p {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.hdr-user-profile i {
+    font-size: 20px;
+}
+
+.hdr-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hdr-btns {
+    background-color: var(--main-color);
+    display: grid;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+#pfp-big {
+    width: 70px;
+    height: 70px;
+}
+
+
+
+
